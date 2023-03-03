@@ -1,0 +1,104 @@
+import random
+
+correctString = "METHINKS IT IS LIKE A WEASEL"
+currentString = ""
+currentScore = 0
+availableElements = ([*"ABCDEFGHIJKLMNOPQRSTUVWXYZ "])
+currentGeneration = []
+nextGeneration = []
+
+# Start with a random string of 28 characters.
+
+
+
+# //write the first string
+def initialString():
+    global currentString
+    newString = ""
+    for i in range(len(correctString)):
+        newString += random.choice(availableElements)
+    currentString = newString
+
+# Make 100 copies of the string (reproduce). Each 'generation' has 100 copies 
+
+def generate():
+    # create 100 strings in a list that can be iterated over and changed? 
+    global currentGeneration
+    currentGeneration = []
+    for i in range(100):
+        currentGeneration.append(currentString)
+
+
+# For each character in each of the 100 copies, with a probability of 5%, replace (mutate) the character with a new random character.
+
+# only mutate if it's different? 
+# before for mutateString, global curreuntGen needs to be cleared
+def mutateString(givenString):
+    global nextGeneration
+    aList = []
+    # for i in givenString:
+    #         # 5% chance of changing the element
+    #         if(random.random() > 0):
+    #             aList.append(random.choice(availableElements))
+    #         else:
+    #             aList.append(i)
+    # nextGeneration.append("".join(aList))
+    for i in range(len(givenString)):
+        if(givenString[i] == correctString[i]):
+            aList.append(givenString[i])
+        else:
+            if(random.random() < 0.95):
+                aList.append(givenString[i])
+            else:
+                aList.append(random.choice(availableElements))
+    nextGeneration.append("".join(aList))
+
+# Compare each new string with the target string “METHINKS IT IS LIKE A WEASEL”, and give each a score (the number of letters in the string that are correct and in the correct position).
+
+def compareString(givenString):
+    global currentString
+    global currentScore
+    stringScore = 0
+    for i in range(len(correctString)):
+        if(correctString[i] == givenString[i]):
+            stringScore += 1
+        else:
+            continue
+    if(stringScore > currentScore):
+        currentString = givenString
+        currentScore = stringScore
+        generate()
+
+#mutates every string in the list of current gen
+def run():
+    for i in currentGeneration:
+        mutateString(i)
+
+#checks every string in the list of nextGen and if there's a better score, makes this the current string and runs generate (which populates currentGen)
+def check():
+    for i in nextGeneration:
+        compareString(i)
+
+
+def main():
+    initialString()
+    generate()
+    generation = 0
+    while(currentScore<len(correctString)):
+        run()
+        check()
+        generation += 1
+        print(f'Generation: {generation}')
+        print(currentString)
+
+
+
+# If any of the new strings has a perfect score (28), halt. Otherwise, take the highest scoring string, and go to step 2.
+
+
+
+
+# how to put this togehter and call the method until it gets it right?
+if __name__ == "__main__":
+    # Check that the script was called with the correct number of arguments
+    main()
