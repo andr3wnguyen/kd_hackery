@@ -1,7 +1,7 @@
 package Classes
 
 class Game(word: Word) {
-  var attemptsLeft = 7
+  var attemptsLeft = 6
   var guesses = Array.empty[Char]
   var currentBoard = word.answer.map(x => if ((guesses).contains(x)) x else "_").mkString("")
 
