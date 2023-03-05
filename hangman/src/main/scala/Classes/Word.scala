@@ -48,11 +48,12 @@ class Word(currentBoard: String) {
   //returns  new seq that can be passed into setAnswer
   //currentGuess is the current state of the answer ("__a__" etc.)
   private def filterList(currentGuess: String): Seq[String] = {
-    val allWords = Source.fromResource("words.txt").getLines.toList
-    for {
-      i <- allWords
-      if i.length == currentGuess.length && wordChecker(i, currentGuess) && compareRevealedLetters(currentGuess, i)
-    } yield i
+   val allWords = Source.fromResource("words.txt").getLines.toList
+//    for {
+//      i <- allWords
+//      if i.length == currentGuess.length && wordChecker(i, currentGuess) && compareRevealedLetters(currentGuess, i)
+//    } yield i
+    allWords.filter(i => i.length == currentGuess.length && wordChecker(i, currentGuess) && compareRevealedLetters(currentGuess, i))
   }
 
   def changeWord(updatedCurrentBoard: String): Unit = {
