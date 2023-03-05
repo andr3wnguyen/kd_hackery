@@ -57,9 +57,9 @@ class Word(currentBoard: String) {
 
   def changeWord(updatedCurrentBoard: String): Unit = {
     val availableWords = filterList(updatedCurrentBoard)
-    if(availableWords.length==1){
-      answer = setAnswer(availableWords)
-    } else { answer = setAnswer(availableWords.filter(_ != currentBoard))
+    if(availableWords.length>1){
+      answer = setAnswer(availableWords.filter(_ != currentBoard))
+    } else {
     }
   }
 

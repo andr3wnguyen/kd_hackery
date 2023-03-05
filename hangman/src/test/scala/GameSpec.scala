@@ -11,7 +11,6 @@ class GameSpec extends AnyFunSpec with Matchers with MockitoSugar{
       when(mockedWord.listOfWords).thenReturn(Seq("answer1","answer2"))
       val game = new Game(mockedWord)
 
-//needs mocking :(
   describe("game class tests") {
     it("can initiate a game given a word, with 7 attempts, 0 guesses, and current board is length of answer") {
       //mock word object - don't think this is technically the way to do it
