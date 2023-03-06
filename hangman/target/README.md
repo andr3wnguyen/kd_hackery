@@ -1,3 +1,13 @@
+##Currently to run open in intelliJ:
+#src>main>scala>run control shift R
+
+##to run with Swing GUI
+#src>main>scala>run control shift R
+
+
+
+
+
 This week we're doing a fun game from Programming Praxis:
 
 Cheating Hangman

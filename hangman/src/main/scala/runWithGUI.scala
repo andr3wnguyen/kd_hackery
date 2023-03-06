@@ -1,15 +1,9 @@
-
 import Classes.{Game, Hungman, Word}
 import scala.util.Random
 import scala.swing._
 import scala.swing.event._
-import java.awt.Color
+import java.awt.{Color,Font}
 import scala.swing.Swing.LineBorder
-
-//drawing
-import java.awt.image.BufferedImage
-import java.awt.{Graphics2D,Font,BasicStroke}
-import java.awt.geom._
 
 
 object RunWithGui extends SimpleSwingApplication {
@@ -26,13 +20,13 @@ object RunWithGui extends SimpleSwingApplication {
     }
   def top = new MainFrame() {
     def draw(attemptsLeft:Int):Unit = {
-      if(attemptsLeft<7){hangman.noose.text = "  ||"}
-      if(attemptsLeft<6){hangman.head.text = " O"}
-      if(attemptsLeft<5){hangman.arms.text = """/|\"""}
-      if(attemptsLeft<4){hangman.torso2.text = "  |"}
-      if(attemptsLeft<3){hangman.legs.text = """/"""}
-      if(attemptsLeft<2){hangman.legs.text = """ / \"""}
-      if(attemptsLeft<1){hangman.legs.text = """ / \ *dies*"""}
+      if(attemptsLeft<6){hangman.noose.text = "  ||"}
+      if(attemptsLeft<5){hangman.head.text = " O"}
+      if(attemptsLeft<4){hangman.arms.text = """/|\"""}
+      if(attemptsLeft<3){hangman.torso2.text = "  |"}
+      if(attemptsLeft<2){hangman.legs.text = """/"""}
+      if(attemptsLeft<1){hangman.legs.text = """ / \"""}
+
     }
     title = "Sneaky Hangman"
 
@@ -57,21 +51,29 @@ object RunWithGui extends SimpleSwingApplication {
               draw(game.attemptsLeft)
               if (game.attemptCheck && game.gameStatus) {
                 game.guess(Option(text.head))
+                draw(game.attemptsLeft)
                 currentBoard.currentBoardLabel.text = game.currentBoard
                 enabled = false
-                if(game.attemptsLeft==0) {currentBoard.gameStatusLabel.text = "Last try!"}
-                else {currentBoard.gameStatusLabel.text = s"${game.attemptsLeft+1} tries left."}
-                if (!game.currentBoard.contains("_")) {
-                  currentBoard.gameStatusLabel.text = "You win!"
-                }
-              }
-                else {
+                if(game.attemptsLeft<1) {
                   currentBoard.gameStatusLabel.text = "You lose."
-                  currentBoard.currentGuessLabel.text = s"The word was '${word.answer}'."
+                  currentBoard.currentGuessLabel.text =  "Click any letter to reveal the word."
+                }
+                else if(game.attemptsLeft==1) {
+                  currentBoard.gameStatusLabel.text = "Last try!"
+                }
+                else {
+                  currentBoard.gameStatusLabel.text = s"${game.attemptsLeft} tries left."
+                }
+                  if (!game.currentBoard.contains("_")) {
+                    currentBoard.gameStatusLabel.text = "You win!"
                 }
               }
+                  else {
+                    currentBoard.currentGuessLabel.text = s"The word was '${word.answer}'."
+                }
+              }
+            }
           }
-        }
         contents += new Button {
           text = "New Game"
           reactions += {
@@ -84,7 +86,7 @@ object RunWithGui extends SimpleSwingApplication {
             newGame()
             //reset the board
             currentBoard.currentBoardLabel.text = game.currentBoard
-            currentBoard.gameStatusLabel.text = s"${game.attemptsLeft+1} tries left."
+            currentBoard.gameStatusLabel.text = s"${game.attemptsLeft} tries left."
             currentBoard.currentGuessLabel.text = ""
               //reset the hangman
             hangman.noose.text = ""
@@ -94,9 +96,9 @@ object RunWithGui extends SimpleSwingApplication {
             hangman.torso2.text = ""
             hangman.legs.text = ""
             }
-            }
           }
         }
+      }
 
     //add letters to container
     container.layout(letterChoices) = BorderPanel.Position.South
@@ -105,10 +107,18 @@ object RunWithGui extends SimpleSwingApplication {
     val hangman = new BoxPanel(Orientation.Vertical) {
       val noose = new Label(""){xLayoutAlignment = 0.5; yLayoutAlignment = 0.5}
       val head = new Label(""){xLayoutAlignment = 0.5; yLayoutAlignment = 0.5}
-      val torso1 = new Label {text =""}
-      val torso2 = new Label {text =""}
-      val arms = new Label {text =""}
-      val legs = new Label {text =""}
+      val torso1 = new Label {
+        text =""
+      }
+      val torso2 = new Label {
+        text =""
+      }
+      val arms = new Label {
+        text =""
+      }
+      val legs = new Label {
+        text =""
+      }
       contents += noose
       contents += head
       contents += torso1
