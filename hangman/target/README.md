@@ -1,12 +1,12 @@
-##Currently to run open in intelliJ:
-#src>main>scala>run control shift R
+##Currently: to run open the project in intelliJ:
+#src>main>scala>run => control+shift+R
 
 ##to run with Swing GUI
-#src>main>scala>run control shift R
+#src>main>scala>runWithGUI  => control+shift+R
 
 
 
-
+Info:
 
 This week we're doing a fun game from Programming Praxis:
 
