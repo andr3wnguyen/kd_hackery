@@ -29,6 +29,8 @@ class Word(currentBoard: String) {
 
   private def revealedLetters(currentGuess: String): String = {
     var distinctRevealedLetters = ""
+
+//    currentGuess.toCharArray.filter(char => char != '_')
     //get the letters from the guess and add to a list
     for (i <- currentGuess) {
       if (i.toString != "_") {
