@@ -14,6 +14,7 @@ class ScoreSpec extends AnyFunSpec with Matchers {
       val card9 = Card("diamonds", "3")
       val card10 = Card("spades", "3")
       val card11 = Card("clubs", "3")
+      val card12 = Card("hearts", "K")
 
       val player = new Player()
       player.getCard(card1)
@@ -36,7 +37,13 @@ class ScoreSpec extends AnyFunSpec with Matchers {
       val table3 = new Table()
       table3.getCard(card7)
       table3.getCard(card6)
-
+      val player4 = new Player()
+      player4.getCard(card1)
+      player4.getCard(card11)
+      player4.getCard(card12)
+      val table4 = new Table()
+      table4.getCard(card4)
+      table4.getCard(card12)
 
   describe("Score") {
     it("initiates a Score object") {
@@ -56,7 +63,7 @@ class ScoreSpec extends AnyFunSpec with Matchers {
       actualCurrentHandLength shouldBe expectedHandLength
     }
 
-    it("should correctly return true if all suits match") {
+    it("should correctly return true if all suits match - checks if flush (also checks isAllSameSuitMethod") {
       //given
       val playerObj = player
       val tableObj = table
@@ -68,8 +75,8 @@ class ScoreSpec extends AnyFunSpec with Matchers {
       val scoreCurrentHand = score.currentHand
       val score2CurrentHand = score2.currentHand
 
-      val actualResultSameSuit = score.isAllSameSuit(scoreCurrentHand)
-      val actualResultNotSameSuit = score2.isAllSameSuit(score2CurrentHand)
+      val actualResultSameSuit = score.isFlush(scoreCurrentHand)
+      val actualResultNotSameSuit = score2.isFlush(score2CurrentHand)
 
       //then
       actualResultSameSuit shouldBe true
@@ -169,6 +176,70 @@ class ScoreSpec extends AnyFunSpec with Matchers {
       actualResultFourOfAKind shouldBe true
       actualResultNotFourOfAKind shouldBe false
     }
+
+    it("should test 3 of a kind method to return true if a card turns up 3 times") {
+      //given
+      val playerObj = player3
+      val tableObj = table
+      val player2Obj = player2
+
+      //when
+      val score = new Score(playerObj, tableObj)
+      val score2 = new Score(player2Obj, tableObj)
+      val scoreCurrentHand = score.currentHand
+      val score2CurrentHand = score2.currentHand
+
+      val actualResultThreeOfAKind = score.isThreeOfaKind(scoreCurrentHand)
+      val actualResultNotThreeOfAKind = score2.isThreeOfaKind(score2CurrentHand)
+
+      //then
+      actualResultThreeOfAKind shouldBe true
+      actualResultNotThreeOfAKind shouldBe false
+
+    }
+
+    it ("should test isAPair method to return true if a card turns up 2 times") {
+      //given
+      val playerObj = player4
+      val tableObj = table
+      val player2Obj = player2
+
+      //when
+      val score = new Score(playerObj, tableObj)
+      val score2 = new Score(player2Obj, tableObj)
+      val scoreCurrentHand = score.currentHand
+      val score2CurrentHand = score2.currentHand
+
+      val actualResultIsAPair = score.isAPair(scoreCurrentHand)
+      val actualResultNotIsAPair = score2.isAPair(score2CurrentHand)
+
+      //then
+      actualResultIsAPair shouldBe true
+      actualResultNotIsAPair shouldBe false
+
+    }
+    it("should test isAFullHouse method to return true if there is a three or a kind and a pair") {
+      //given
+      val playerObj = player3
+      val tableObj = table4
+      val player2Obj = player2
+
+      //when
+      val score = new Score(playerObj, tableObj)
+      val score2 = new Score(player2Obj, tableObj)
+      val scoreCurrentHand = score.currentHand
+      val score2CurrentHand = score2.currentHand
+
+      val actualResultIsFullHouse = score.isFullHouse(scoreCurrentHand)
+      val actualResultNotFullHouse = score2.isFullHouse(score2CurrentHand)
+
+      //then
+      actualResultIsFullHouse shouldBe true
+      actualResultNotFullHouse shouldBe false
+    }
+
+
+
 
   }
 }

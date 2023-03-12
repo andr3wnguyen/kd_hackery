@@ -88,6 +88,29 @@ class Score(player:Player, table:Table) {
     cardValues.count(_==cardValues(0)) == 4 || cardValues.count(_==cardValues(1)) == 4
   }
 
+  def isThreeOfaKind(hand:Seq[Card]): Boolean = {
+    val cardValues = hand.map(_.givenValue).groupBy(identity)
+    val countsForValue = for{i<-cardValues} yield i._2.count(_==i._1)
+    countsForValue.toSeq.contains(3)
+    //sift through the cards to see if there are 3 of a card, ucreates a list of card values, then groups by value.
+    //creates another list with counts and then checks if this list contains 3
+
+  }
+
+  def isAPair(hand: Seq[Card]): Boolean = {
+    val cardValues = hand.map(_.givenValue).groupBy(identity)
+    val countsForValue = for {i <- cardValues} yield i._2.count(_ == i._1)
+    countsForValue.toSeq.contains(2)
+  }
+  def isFullHouse(hand:Seq[Card]): Boolean = {
+    //checks if there is a three of a kind and a pair
+    isThreeOfaKind(hand) && isAPair(hand)
+  }
+
+  def isFlush(hand:Seq[Card]): Boolean = {
+    isAllSameSuit(hand)
+  }
+
 
 
 }
