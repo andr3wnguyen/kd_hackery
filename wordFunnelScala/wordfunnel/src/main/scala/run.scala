@@ -11,4 +11,8 @@ object run extends App {
 
   println(funnel(firstWord,secondWord))
 
+
+  funnel.printAllPossibleWords(firstWord)
+  //additional option 1 - all words
+
 }

@@ -44,3 +44,28 @@ case class Word(i: Int) {
   def getWord:String = "words"
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

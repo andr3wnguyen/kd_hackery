@@ -14,6 +14,14 @@ class FunnelSpec extends AnyFunSpec{
     }
   }
 
+  it("loads words from the text file correctly"){
+    assert(funnel.getAllWords.length.equals(172823))
+  }
+
+
+  it("prints out a list of all possible words from the all_words.txt"){
+    //write a test for this
+  }
 }
 //case class First(word:String) {
 //  val wordlets = Seq("of","fo","fo")
