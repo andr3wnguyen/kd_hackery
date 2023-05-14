@@ -12,7 +12,7 @@ object run extends App {
   println(funnel(firstWord,secondWord))
 
 
-  funnel.printAllPossibleWords(firstWord)
+  funnel.bonus(firstWord)
   //additional option 1 - all words
 
 }

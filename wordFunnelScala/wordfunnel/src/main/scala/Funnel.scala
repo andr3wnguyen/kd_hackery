@@ -13,9 +13,13 @@ class Funnel {
   }
 
   //checks if taking off a letter creates a word contained in getAllWords
-  def printAllPossibleWords(wordOne:FirstWord): Unit = {
+  def getAllPossibleWords(wordOne:FirstWord): Seq[String] = {
     val a = getAllWords
-    for(i<-wordOne.wordlets){if(a.contains(i)) println(i)}
+    wordOne.wordlets.filter(x => a.contains(x))
   }
 
+  def bonus(wordOne:FirstWord): Unit = {
+    val allWords = getAllPossibleWords(wordOne)
+    allWords.foreach(println)
+  }
 }

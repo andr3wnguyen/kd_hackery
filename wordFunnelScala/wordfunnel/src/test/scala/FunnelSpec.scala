@@ -4,7 +4,7 @@ class FunnelSpec extends AnyFunSpec{
   val funnel = new Funnel
   val firstWord = new FirstWord("foo")
   val secondWord = new SecondWord("oo")
-  val firstWordFalse = new FirstWord("foobar")
+  val firstWordFalse = new FirstWord("boats")
   val secondWordFalse = new SecondWord("notfooorbar")
 
   describe("Funnel"){
@@ -19,8 +19,9 @@ class FunnelSpec extends AnyFunSpec{
   }
 
 
-  it("prints out a list of all possible words from the all_words.txt"){
+  it("gets all bonus words from a list of all possible words (all_words.txt)"){
     //write a test for this
+    assert(funnel.getAllPossibleWords(firstWordFalse).equals(Seq("oats", "bats", "bots", "boas", "boat")))
   }
 }
 //case class First(word:String) {
