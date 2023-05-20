@@ -20,12 +20,20 @@ bonus("affidavit") => []
 
 Optional bonus 2
 
-Given an input word from enable1, the largest number of words that can be returned from bonus(word) is 5. One such input is "boats". There are 28 such inputs in total. Find them all.
+Given an input word from enable1, the largest number of words that can be returned from bonus(word) is 5.
+One such input is "boats". There are 28 such inputs in total. Find them all.
 
-Ideally you can do this without comparing every word in the list to every other word in the list. A good time is around a second. Possibly more or less, depending on your language and platform of choice - Python will be slower and C will be faster. The point is not to hit any specific run time, just to be much faster than checking every pair of words.
+Ideally you can do this without comparing every word in the list to every other word in the list.
+A good time is around a second. Possibly more or less, depending on your language and platform of choice -
+Python will be slower and C will be faster. The point is not to hit any specific run time,
+just to be much faster than checking every pair of words.
 
 
+//input -> bonus words = 5
+//find all words where bonus = 5
 
+//-> given a word x, filter where bonus(x) .count = 5
+//allWords.filter(x => bonus(x)==5)
 
 
 APPROACH
