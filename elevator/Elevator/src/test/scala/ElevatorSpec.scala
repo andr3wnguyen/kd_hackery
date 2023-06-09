@@ -8,22 +8,22 @@ class ElevatorSpec extends AnyFunSpec {
 
 
   describe("Elevator") {
-    it("can tell what floor it is on") {
-
-      val output = new java.io.ByteArrayOutputStream()
-      Console.withOut(output) {
-      elevator.doorOpen(floor0)
-      }
-        val terminalOutput = output.toString()
-      assert(terminalOutput.contains("This is floor 0"))
-
-      }
-
+//    it("can tell what floor it is on") {
+//
+//      val output = new java.io.ByteArrayOutputStream()
+//      Console.withOut(output) {
+//      elevator.currentFloor()
+//      }
+//        val terminalOutput = output.toString()
+//      assert(terminalOutput.contains("This is floor 0"))
+//
+//      }
+// *** THE ELEVATOR IS NOT SENTIENT AND HAS NO AWARENESS OF WHAT IT IS AND WHAT IT ISN'T, IT MERELY EXISTS (this test is redundant)
   it("can tell what floor it is going to") {
 
     val output = new java.io.ByteArrayOutputStream()
     Console.withOut(output) {
-      elevator.doorClose(floor1)
+      elevator.goingTo(floor1)
     }
     val terminalOutput = output.toString()
     assert(terminalOutput.contains("Going to floor 1"))

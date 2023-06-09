@@ -4,15 +4,25 @@ class Elevator {
 //  var goingTo = 0
 
 
-  def doorOpen(floor:Floor): Unit = {
-    println(s"The door is opening. This is floor ${floor.floorNumber}")
-//    currentFloor = floor.floorNumber
+  def doorOpen(): Unit = {
+    println(s"The door is opening.")
   }
 
-  def doorClose(floor:Floor): Unit = {
-    Thread.sleep(3000)
-    println(s"The door is now closing. Going to floor ${floor.floorNumber}")
+//  def currentFloor(floor:Floor): Unit = {
+//    println(s"This is floor ${floor.floorNumber}")
+//  }
+  def doorClose(): Unit = {
+    println("The door is closing.")
+  }
+  def goingTo(floor:Floor): Unit = {
+    println(s"Going to floor ${floor.floorNumber}.")
 //    goingTo = floor.floorNumber
+  }
+
+
+  //for door open and close timer
+  def doorTimer(seconds:Int): Unit = {
+    Thread.sleep(seconds*1000)
   }
 
 
