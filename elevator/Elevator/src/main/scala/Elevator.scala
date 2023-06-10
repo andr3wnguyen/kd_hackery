@@ -2,6 +2,8 @@ class Elevator {
 //how does an elevator know what floor it is on
 //  var currentFloor = 0
 //  var goingTo = 0
+  var active = false
+  var working = true
 
 
   def doorOpen(): Unit = {
@@ -23,6 +25,10 @@ class Elevator {
   //for door open and close timer
   def doorTimer(seconds:Int): Unit = {
     Thread.sleep(seconds*1000)
+  }
+
+  def switchState(): Unit = {
+    active = !active
   }
 
 
