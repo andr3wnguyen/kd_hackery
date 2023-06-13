@@ -1,7 +1,7 @@
-class Building(numberOfFloors:Int) {
+class Building(numberOfFloors:Int, numberOfElevators:Int) {
   val floors = listOfFloors()
-//  val numberOfFloors = numberOfFloors
-  val elevator = new Elevator
+  val elevators = listOfElevators()
+//  val elevator = new Elevator
 
 
   //create a sequence of Floor items with number of floors passed to the building
@@ -11,5 +11,8 @@ class Building(numberOfFloors:Int) {
   }
 
 
+  def listOfElevators(): Seq[Elevator] = {
+    (0 to this.numberOfElevators-1).map(x => new Elevator(x))
+  }
 
 }
