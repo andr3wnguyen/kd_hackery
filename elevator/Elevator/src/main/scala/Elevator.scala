@@ -24,7 +24,6 @@ class Elevator(id:Int) {
 //    goingTo = floor.floorNumber
   }
 
-
   //for door open and close timer
   def doorTimer(seconds:Int): Unit = {
     Thread.sleep(seconds*1000)

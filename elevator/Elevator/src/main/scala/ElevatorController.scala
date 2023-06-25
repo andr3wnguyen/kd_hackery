@@ -2,6 +2,7 @@
 //store the state of the current elevator
 class ElevatorController(building:Building) {
   var queue = Seq[Floor]().empty.distinct
+  var elevatorsAndCurrentPositions = listElevatorsAndCurrentPositions()//listElevatorsAndCurrentPositions()
 //  var elevatorCurrent = getCurrentElevatorFloor()
 
   //give each elevator and id
@@ -22,16 +23,6 @@ class ElevatorController(building:Building) {
     this.building.floors.find(_.floorNumber == floorNo).get
   }
 
-//  def call(floor: Int): Unit = {
-//    //within the building a call is passed from the floor which then adds the floor to the queue
-//    val calledFloor = convertIntToFloor(floor)
-//    if (calledFloor == getCurrentElevatorFloor()) println(s"You are already on floor ${getCurrentElevatorFloor().floorNumber}.")
-//    else {
-//      if (!queue.contains(calledFloor)) queue = queue :+ calledFloor
-//      else println(s"Floor ${calledFloor.floorNumber} is already queued.")
-//    }
-//  }
-
   def call(floorNumber:Int): Unit = {
     //adds a call to the queue
     val calledFloor = convertIntToFloor(floorNumber)
@@ -39,11 +30,6 @@ class ElevatorController(building:Building) {
     else println(s"Floor ${calledFloor.floorNumber} is already queued.")
   }
 
-
-//  def getCurrentElevatorFloor(elevatorId: Int): Int = {
-//    //finds elevatorStatus of true and gets the Floor object
-//    this.building.elevators(elevatorId).currentFloor
-//  }
 
   def moveElevator(elevatorId: Int, floorToGoTo: Floor): Unit = {
     //finds the current elevator floor object and updates the elevatorStatus (toggle)
@@ -66,26 +52,33 @@ class ElevatorController(building:Building) {
   //gets the closest elevator to the called floor to go
 
   def getClosestElevator(): Int = {
-    //check the floor in the queue
     val firstQueuedFloor = queue.head.floorNumber
-    //check where the elevators are
     val listOfElevatorIds = building.elevators.map(x => x.elevatorId) //gets all the elevator ids
-//    println(listOfElevatorIds)
-//    print(" el IDS")
     val mapOfElevatorPositionsDifferenceWithIds = listOfElevatorIds.map(x => (x, (getCurrentElevatorFloor(x)-firstQueuedFloor).abs))//gets an id -> position
-    //get the id of the elevator that's closest
-//    println(mapOfElevatorPositionsDifferenceWithIds + " Mapped")
-//    println(mapOfElevatorPositionsDifferenceWithIds.minBy(x => x._2)._1)
     mapOfElevatorPositionsDifferenceWithIds.minBy(x => x._2)._1
 
-    //get the
   }
+
+  //gets a list of all elevators and where they are
+  def listElevatorsAndCurrentPositions(): Seq[Map[Int,Int]] = {
+    val listOfElevators = building.elevators
+    listOfElevators.map(x => Map(x.elevatorId->getCurrentElevatorFloor(x.elevatorId)))
+  }
+
+  def updateListElevatorsAndCurrentPositions(listOFElevators: Seq[Map[Int,Int]], updatedElevator:Map[Int,Int]) = {
+    //takes new map and updates the elevatorsAndPositions field
+    val key = updatedElevator.keys.head
+    val value = updatedElevator.values.head
+    listOFElevators.find(_.contains(key)).get.updated(key,value)
+    }
 
   def initiateElevator(closestElevatorId:Int): Unit = {
 
     //changes active state of the elevator to true whilst it is going
     //for the last floor, saves where the elevator is
     building.elevators(closestElevatorId).switchState()
+    var listOfElevators = listElevatorsAndCurrentPositions()
+    elevatorsAndCurrentPositions = listOfElevators
     while (queue.length > 0) {
 
       //moves to all the floors in the elevator queue
@@ -110,6 +103,7 @@ class ElevatorController(building:Building) {
           building.elevators(closestElevatorId).doorTimer(1)
           //move the elevator to that floor
           moveElevator(closestElevatorId,floor)
+          updateListElevatorsAndCurrentPositions(listOfElevators,Map(closestElevatorId->floor.floorNumber))
 
 
           //last floor
@@ -125,29 +119,9 @@ class ElevatorController(building:Building) {
             queue = queue.filter(_ != floor)
 //            println(s"floors order = ${queue.map(_.floorNumber)}")
         }
-
         }
       }
     }
   }
 
 
-
-
-
-
-
-      //        val firstNext = floor //gets value of currentFloor and nextFloor
-      //        val currentFloor = firstNext.head
-      //        val goingToFloor = firstNext.last
-      //        building.elevator.doorOpen(currentFloor) //opens the door and
-      //        building.elevator.doorClose(goingToFloor)
-      //
-      //        moveElevator(firstNext.head)
-
-      //special case -> move to the last elevator floor *
-      //where does the lift end?
-
-      //while loop needs to be terminated -> remove the floor from the list that the elevator is leaving?
-      //          queue.dequeue(firstNext.head)
-      //try iterating over individual
