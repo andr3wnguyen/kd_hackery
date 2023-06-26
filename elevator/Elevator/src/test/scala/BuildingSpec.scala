@@ -3,7 +3,7 @@ import org.scalatest.funspec.AnyFunSpec
 
 class BuildingSpec extends AnyFunSpec {
 
-val building = new Building(4)
+val building = new Building(4,2)
   describe("Building") {
 
 

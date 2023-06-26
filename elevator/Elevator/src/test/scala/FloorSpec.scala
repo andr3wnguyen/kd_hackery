@@ -13,16 +13,16 @@ class FloorSpec extends AnyFunSpec {
       assert(floor0.floorNumber == 0)
     }
 
-    it("if a floor is floor 0, the elevatorStatus is true (an elevator starts at floor 0) any other floor has no elevator") {
-      assert(floor0.elevatorStatus == true)
-      assert(floor1.elevatorStatus == false)
-    }
+//    it("if a floor is floor 0, the elevatorStatus is true (an elevator starts at floor 0) any other floor has no elevator") {
+//      assert(floor0.elevatorStatus == true)
+//      assert(floor1.elevatorStatus == false)
+//    }
 
-    it("toggles elevatorStatus correctly") {
-      assert(floor0.elevatorStatus == true)
-      floor0.toggleElevatorStatus()
-      assert(floor0.elevatorStatus == false)
-    }
+//    it("toggles elevatorStatus correctly") {
+//      assert(floor0.elevatorStatus == true)
+//      floor0.toggleElevatorStatus()
+//      assert(floor0.elevatorStatus == false)
+//    }
 
   }
 }

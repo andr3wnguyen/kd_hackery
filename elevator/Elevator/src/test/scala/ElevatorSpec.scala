@@ -2,7 +2,7 @@ import org.scalatest.funspec.AnyFunSpec
 
 class ElevatorSpec extends AnyFunSpec {
 
-  val elevator = new Elevator
+  val elevator = new Elevator(1)
   val floor0 = new Floor(0)
   val floor1 = new Floor(1)
 

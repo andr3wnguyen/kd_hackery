@@ -10,3 +10,8 @@ lazy val root = (project in file("."))
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.15"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % "test"
 libraryDependencies += "org.scalatestplus" %% "mockito-4-6" % "3.2.15.0" % "test"
+
+
+//swing for gui
+libraryDependencies += "org.scala-lang.modules" %% "scala-swing" % "3.0.0"
+
