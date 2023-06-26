@@ -2,22 +2,7 @@
 //store the state of the current elevator
 class ElevatorController(building:Building) {
   var queue = Seq[Floor]().empty.distinct
-  var elevatorsAndCurrentPositions = listElevatorsAndCurrentPositions()//listElevatorsAndCurrentPositions()
-//  var elevatorCurrent = getCurrentElevatorFloor()
-
-  //give each elevator and id
-//  var listOfActiveElevators = building.listOfElevators().map(x => Map(x -> x.elevatorId))
-
-
-  //tracks the elevators and floors
-  //has a queue that holds calls
-  //executes in order of calls
-
-  //  def elevatorQueue(): mutable.Queue[Int] = {
-  //    mutable.Queue()
-  //  }
-
-  //queue is altered on call
+  var elevatorsAndCurrentPositions = listElevatorsAndCurrentPositions()
 
   def convertIntToFloor(floorNo: Int): Floor = {
     this.building.floors.find(_.floorNumber == floorNo).get
@@ -105,7 +90,6 @@ class ElevatorController(building:Building) {
           moveElevator(closestElevatorId,floor)
           updateListElevatorsAndCurrentPositions(listOfElevators,Map(closestElevatorId->floor.floorNumber))
 
-
           //last floor
           //if the length of the queue is bigger than 1 delete it. else -> leave the last value in as this is control fo the state
           //if it is at the last call in the queue, switches active state to false and leaves that value in the queue
@@ -118,7 +102,7 @@ class ElevatorController(building:Building) {
             //remove the floor you just went to
             queue = queue.filter(_ != floor)
 //            println(s"floors order = ${queue.map(_.floorNumber)}")
-        }
+          }
         }
       }
     }
