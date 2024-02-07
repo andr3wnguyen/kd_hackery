@@ -5,13 +5,13 @@ import scala.util.Random
   class Deck() {
     //create the deck of 52
     val suit = Seq[String]("clubs", "hearts", "spades", "diamonds")
-    val value = Seq[String]("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A")
+    val value = Seq[String]("2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A")
     var currentDeck = createDeck()
 
     //deck contains a seq of card objects
     def createDeck(): Seq[Card] = {
       for {i <- suit
-           j <- value} yield new Card(j, i)
+           j <- value} yield new Card(i, j)
     }
 
     //passes a card instnace in and removes it from list (actually creates a new list)

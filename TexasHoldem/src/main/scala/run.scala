@@ -1,5 +1,4 @@
-import Classes.{Deck, Player, Table}
-
+import Classes.{Deck, Player, Score, Table}
 
 import scala.util.Random
 
@@ -20,39 +19,83 @@ object run extends App {
    */
 
 
+  //create deck
   val b = new Deck()
-  println(b.currentDeck.length)
-  println(b.randomCard())
-  val c = b.randomCard()
-  println(c)
-  b.updatedDeck(b.removeCard(c))
-  println(b.currentDeck)
+  println("> Dealing cards... ")
+
+  //dealing 2 cards to a player
   val player = new Player
   b.dealPlayer(player)
-  println(player.hand)
-  println(b.currentDeck)
   b.dealPlayer(player)
-  println(player.hand)
-  println(b.currentDeck)
-  player.clearHand()
-  println("hand=", player.hand)
 
-  b.removeCard(b.randomCard())
+  println(s"[] Your cards: ${player.hand.map(_.toString).mkString(", ")} []")
 
-  val table = new Table()
+  //deal 2 cards to house
+  val house = new Player
+  b.dealPlayer(house)
+  b.dealPlayer(house)
+
+  //  println(s"House cards: ${house.hand.map(_.toString).mkString(", ")}")
+
+  val table = new Table
+
+  //flop
   b.dealTable(table)
   b.dealTable(table)
   b.dealTable(table)
 
-  println(table.table)
-  println(b.currentDeck)
+  //flop
+  println(" ")
+  println(s"[] Table cards: ${table.table.map(_.toString).mkString(", ")} []")
 
-  b.dealTable(table)
-  b.dealTable(table)
+  var in = true
+  var folded = false
+  while (in && table.table.length < 5) {
+    println(" ")
+    println("Deal? y/n")
+    println(" ")
+    val userInput = scala.io.StdIn.readLine().toLowerCase()
+    if (userInput == "y") {
+      // Continue the program
+      println(" ")
+      println("Dealing...")
+      println(" ")
+      b.dealTable(table)
+      println(s"Table cards ${table.table}")
+    } else if (userInput == "n") {
+      // End the loop and exit the program
+      println("FOLDED.")
+      in = false
+      folded = true
+    } else {
+      // Handle invalid input
+      println("Invalid input. Please enter 'y' or 'n'.")
+    }
+  }
 
-  println("table=",table.table)
-  println("deck=", b.currentDeck)
+  //tally the scores once the river
+  if (folded == false) {
+    println("=========================================================")
+    println(s"Your cards: ${player.hand.map(_.toString).mkString(", ")}")
+    println(s"House cards: ${house.hand.map(_.toString).mkString(", ")}")
+    println("=========================================================")
+    println(s"Table: ${table.table.map(_.toString).mkString(", ")}")
+    println("=========================================================")
+    val playerScore = new Score(player, table)
+    val houseScore = new Score(house, table)
+
+    //compare hands
+    if (playerScore.getCurrentHandsScore < houseScore.getCurrentHandsScore) {
+      println(s"You win with ${playerScore.winCondition}.")
+    }
+    else if (playerScore.getCurrentHandsScore == houseScore.getCurrentHandsScore) {
+      println(s"Split pot, you have ${playerScore.winCondition} and house also has ${houseScore.winCondition}")
+    }
+    else
+      println(s"House wins with ${houseScore.winCondition}")
+
+  }
+
 }
 
-//
-//}
+//currently flawed logic for if both get 2 pairs.
