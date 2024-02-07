@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="55713339-1ee4-4e4c-bd90-37c6918784f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$1d5234ed274451c80a72$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$1d5234ed274451c80a72.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$1d5234ed274451c80a72.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$30d54970b951f14d1b7b$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$30d54970b951f14d1b7b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$30d54970b951f14d1b7b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$3c578ad16f207b58d9a3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$3c578ad16f207b58d9a3.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$3c578ad16f207b58d9a3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$9962f9e209b5a9b63a9b$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$9962f9e209b5a9b63a9b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$9962f9e209b5a9b63a9b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$b2ec0fae84cc2909a46d$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$b2ec0fae84cc2909a46d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$b2ec0fae84cc2909a46d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$e33305d976045e6868c8$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$e33305d976045e6868c8.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$e33305d976045e6868c8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$ff667cdbb6d268969584$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$ff667cdbb6d268969584.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/config-classes/$ff667cdbb6d268969584.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../TexasHoldem/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$0607c04633b42640576f$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$0607c04633b42640576f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$0607c04633b42640576f.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$0f7ce82f237d8b54a62b$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$0f7ce82f237d8b54a62b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$0f7ce82f237d8b54a62b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$3293df84ab036b815562$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$3293df84ab036b815562.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$3293df84ab036b815562.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$4501bd0def987aa2d98b$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$4501bd0def987aa2d98b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$4501bd0def987aa2d98b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$58cd010529444e731729$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$58cd010529444e731729.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$58cd010529444e731729.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$ba15efe7cfacf6c47740$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$ba15efe7cfacf6c47740.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$ba15efe7cfacf6c47740.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$bfc6c8dece3481476561$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$bfc6c8dece3481476561.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$bfc6c8dece3481476561.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$d098ab655deff377fbe9$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$d098ab655deff377fbe9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/config-classes/$d098ab655deff377fbe9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wordle/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../wordle/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2SToGlvBdTvoaAdj76PNbGD5FM9" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.run">
+    <configuration name="run" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="run" />
+      <module name="cribbage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="cribbage" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="testClassPath" value="ScoreSpec" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreSpec.Score initiates a Score object&#10;Score scores a  run correctly&#10;Score scores a 5 run correctly&#10;Score scores a pair correctly&#10;Score scores two pairs correctly&#10;Score scores three pairs correctly&#10;Score scores a flush correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="cribbage" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="ScoreSpec" />
+      <option name="testName" value="Score initiates a Score object&#10;Score scores a  run correctly&#10;Score scores a 5 run correctly&#10;Score scores a pair correctly&#10;Score scores two pairs correctly&#10;Score scores three pairs correctly&#10;Score scores a flush correctly" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreSpec.Score scores a 5 run correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="cribbage" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="ScoreSpec" />
+      <option name="testName" value="Score scores a 5 run correctly" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreSpec.Score scores nobs correctly" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="cribbage" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Test name" />
+      <option name="testClassPath" value="ScoreSpec" />
+      <option name="testName" value="Score scores nobs correctly" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.run" />
+        <item itemvalue="ScalaTest.ScoreSpec" />
+        <item itemvalue="ScalaTest.ScoreSpec.Score scores a 5 run correctly" />
+        <item itemvalue="ScalaTest.ScoreSpec.Score scores nobs correctly" />
+        <item itemvalue="ScalaTest.ScoreSpec.Score initiates a Score object&#10;Score scores a  run correctly&#10;Score scores a 5 run correctly&#10;Score scores a pair correctly&#10;Score scores two pairs correctly&#10;Score scores three pairs correctly&#10;Score scores a flush correctly" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55713339-1ee4-4e4c-bd90-37c6918784f3" name="Changes" comment="" />
+      <created>1689179838973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689179838973</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/Score.scala</url>
+          <line>88</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/Score.scala</url>
+          <line>90</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/Score.scala</url>
+          <line>53</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/test/scala/ScoreSpec.scala</url>
+          <line>44</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/test/scala/ScoreSpec.scala</url>
+          <line>43</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
